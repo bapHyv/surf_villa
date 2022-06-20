@@ -268,9 +268,9 @@ section {
 }
 
 .text-section-location-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .fp-section-location {
@@ -287,4 +287,75 @@ section {
   font-weight: 800;
   color: white;
   padding: 5%;
+}
+
+.section-surf-camp {
+  display: flex;
+}
+
+.text-and-img1-section-surf-camp-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-section-surf-camp-container {
+  padding: 0px 40px 30px 80px;
+}
+
+.title-section-surf-camp {
+  font-family: 'Collier-regular';
+  font-weight: 200;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+
+.price-section-surf-camp {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.included-section-surf-camp {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.schedule-section-surf-camp {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.Atmosphere-section-surf-camp {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.img1-section-surf-camp {
+  width: 100%;
+}
+
+.img2-and-nb-section-surf-camp-container {
+  position: relative;
+  width: 40%;
+  background-color: #f5d410;
+}
+
+.img2-section-surf-camp {
+  width: 100%;
+}
+
+.nb-section-surf-camp {
+  position: absolute;
+  font-family: 'Collier-regular';
+  color: white;
+  font-size: 60rem;
+  left: -150px;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+
+.bold {
+  font-weight: bold;
 }
