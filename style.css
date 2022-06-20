@@ -188,6 +188,7 @@ section {
 
 .section-about-villa {
   margin-top: 600px;
+  margin-bottom: 200px;
 }
 
 .text-img-container-about-villa {
@@ -246,11 +247,44 @@ section {
 }
 
 .img2-section-about-villa-container {
-    position: relative;
+  position: relative;
 }
 
 .img2-section-about-villa {
-    position: absolute;
-    top: -50px;
-    left: 100px;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+
+.section-location {
+  margin-top: 400px;
+  display: flex;
+}
+
+.img-section-location {
+  object-fit: cover;
+  width: 50%;
+  height: 600px;
+}
+
+.text-section-location-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fp-section-location {
+  height: 50%;
+  font-family: 'Collier-regular';
+  font-size: 3rem;
+  padding: 5%;
+}
+
+.sp-section-location {
+  height: 50%;
+  background-color: #f5d410;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  padding: 5%;
 }
