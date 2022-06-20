@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Brandon_Reg';
+  src: url('./assets/fonts/Brandon_reg.eot') format('eot');
+  src: url('./assets/fonts/Brandon_reg.otf') format('otf'),
+    url('./assets/fonts/Brandon_reg.ttf') format('ttf'),
+    url('./assets/fonts/Brandon_reg.woff') format('woff'),
+    url('./assets/fonts/Brandon_reg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Collier-regular';
+  src: url('./assets/fonts/Collier-Regular.eot') format('eot');
+  src: url('./assets/fonts/Collier-Regular.otf') format('otf'),
+    url('./assets/fonts/Collier-Regular.ttf') format('ttf'),
+    url('./assets/fonts/Collier-Regular.woff') format('woff'),
+    url('./assets/fonts/Collier-Regular.woff2') format('woff2');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Taken_by_Vultures_Demo';
+  src: url('./assets/fonts/Taken_by_Vultures_Demo.eot') format('eot');
+  src: url('./assets/fonts/Taken_by_Vultures_Demo.otf') format('otf'),
+    url('./assets/fonts/Taken_by_Vultures_Demo.ttf') format('ttf'),
+    url('./assets/fonts/Taken_by_Vultures_Demo.woff') format('woff'),
+    url('./assets/fonts/Taken_by_Vultures_Demo.woff2') format('woff2');
+  font-display: block;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Brandon_Reg';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.language-container {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-container {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 355px;
+    height: 294px;
+}
