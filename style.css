@@ -30,6 +30,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -73,7 +74,7 @@ section {
 
 .section-hello {
   position: relative;
-  height: 65vh;
+  height: 80vh;
   background-color: #f5d410;
   display: flex;
   padding: 80px;
@@ -174,7 +175,7 @@ section {
 }
 
 .img2-section-about-us-container {
-    position: relative;
+  position: relative;
 }
 
 .img2-section-about-us {
@@ -186,5 +187,70 @@ section {
 }
 
 .section-about-villa {
-    margin-top: 600px;
+  margin-top: 600px;
+}
+
+.text-img-container-about-villa {
+  display: flex;
+  width: 100%;
+}
+
+.text-section-about-villa-container {
+  width: 50%;
+  padding: 100px;
+}
+
+.img-and-text-section-about-villa-container {
+  width: 50%;
+}
+
+.text1-section-about-villa {
+  font-family: 'Collier-regular';
+  font-size: 3rem;
+}
+
+.text2-section-about-villa {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.img1-section-about-villa {
+  object-fit: cover;
+  height: 450px;
+  width: 450px;
+}
+
+.img2-section-about-villa {
+  object-fit: cover;
+  height: 350px;
+  width: 850px;
+}
+
+.img-and-text-section-about-villa-container {
+  position: relative;
+  background-color: #f5d410;
+}
+
+.img1-section-about-villa {
+  position: absolute;
+  top: -150px;
+}
+
+.welcome-text-section-about-villa {
+  font-family: 'Taken_by_Vultures_Demo';
+  margin-top: 220px;
+  padding: 100px;
+  color: white;
+  font-size: 13rem;
+  line-height: 120%;
+}
+
+.img2-section-about-villa-container {
+    position: relative;
+}
+
+.img2-section-about-villa {
+    position: absolute;
+    top: -50px;
+    left: 100px;
 }
