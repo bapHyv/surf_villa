@@ -11,11 +11,25 @@
 
 <body>
     <header class="header">
-        <a href="#">ABOUT US</a>
-        <a href="#">PACKAGES</a>
-        <a href="#">ADVENTURES</a>
-        <a href="#">ACCOMODATION</a>
-        <a href="#">CONTACTS</a>
+        <div class="dropdown">
+            <p class="dropbtn">A VILLA</p>
+            <div class="dropdown-content">
+                <a href="#section-about-us">ABOUT US</a>
+                <a href="#section-about-villa">ABOUT VILLA</a>
+                <a href="#section-location">LOCATION</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p class="dropbtn">PACKAGES</p>
+            <div class="dropdown-content">
+                <a href="#section-surf-camp">SURF CAMPS</a>
+                <a href="#surf-and-stay">SURF & STAY</a>
+                <a href="#surf-guiding">SURF GUIDING</a>
+            </div>
+        </div>
+        <a href="#adventures" class="dropbtn">ADVENTURES</p>
+        <a href="#formulaire" class="dropbtn">ACCOMODATION</a>
+        <a href="#contact" class="dropbtn">CONTACTS</a>
         <div class="language-container">
             <a href="">FR</a>
             <p>|</p>
@@ -44,8 +58,7 @@
         </div>
     </section>
 
-    <section class="section-about-us">
-
+    <section class="section-about-us" id="section-about-us">
         <img class="img1-section-about-us" src="./assets/photos/img1_section_about_us.jpg" alt="Piscine du surf camp">
         <div class="text-section-about-us-container">
             <h2 class="title-section-about-us">Hi there! Are you looking <br> for plan of your best holidays?</h2>
@@ -69,8 +82,8 @@
                 alt="Groupe de personnes en vacance">
         </div>
     </section>
-    <section class="section-about-villa">
 
+    <section class="section-about-villa" id="section-about-villa">
         <div class="text-img-container-about-villa">
             <div class="text-section-about-villa-container">
                 <p class="text1-section-about-villa">Surf Villa belongs to Brahim Iddouch marrocan IBC world bodyboard
@@ -90,21 +103,18 @@
                 alt="Brahim Iddouch faisant un backflip">
         </div>
     </section>
-    <section class="section-location">
 
+    <section class="section-location" id="section-location">
         <img class="img-section-location" src="./assets/photos/img1_section_about_us.jpg" alt="">
-
         <div class="text-section-location-container">
             <p class="fp-section-location">Surf Villa is situated in Aourir, Agadir district. <br> It's on the north
                 coast of Morocco.</p>
             <p class="sp-section-location">We have a lot of cool and famous surf spots around, so it's easy to reach the
                 best waves of the day. We are not going to stay in one place all the time</p>
         </div>
-
     </section>
 
-    <section class="section-surf-camp">
-
+    <section class="section-surf-camp" id="section-surf-camp">
         <div class="text-and-img1-section-surf-camp-container">
             <div class="text-section-surf-camp-container">
                 <h2 class="title-section-surf-camp">Join the group of awesome people like you are !</h2>
@@ -143,10 +153,9 @@
                 alt="Chambre de la location de surf camp">
             <p class="nb-section-surf-camp">#1</p>
         </div>
-
     </section>
 
-    <section class="section-surf-camp">
+    <section class="section-surf-camp" id="surf-and-stay">
         <div class="text-and-img1-section-surf-camp-container">
             <div class="text-section-surf-camp-container">
                 <h2 class="title-section-surf-camp">Accommodation & lessons & activities</h2>
@@ -189,8 +198,7 @@
         </div>
     </section>
 
-    <section class="section-surf-camp">
-
+    <section class="section-surf-camp" id="surf-guiding">
         <div class="text-and-img1-section-surf-camp-container">
             <div class="text-section-surf-camp-container">
                 <h2 class="title-section-surf-camp">We will help you to get your best wave</h2>
@@ -217,10 +225,9 @@
                 alt="Chambre de la location de surf camp">
             <p class="nb3">#3</p>
         </div>
-
     </section>
 
-    <section class="section-adventures">
+    <section class="section-adventures" id="adventures">
         <h2 class="title-section-adventures">Except good waves, <br> Morocco is full of cool things to see.</h2>
         <div class="paradise-and-text-section-adventures-container">
             <p class="paradise-section-adventures">Paradise Valley</p>
@@ -233,7 +240,7 @@
         </div>
     </section>
 
-    <section class="section-formulaire">
+    <section class="section-formulaire" id="formulaire">
         <h2 class="title-section-formulaire">Let's book your journey</h2>
         <div class="accommodation">
             <div class="book-area">
@@ -260,7 +267,28 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+
+    <section class="section-message" id="contact">
+        <p class="text-section-message">Feel free to catch us personaly!</p>
+        <p class="text-section-message">We are always happy to talk</p>
+    </section>
+
+    <footer>
+        <p class="see-you">See You <br> Soon :)</p>
+        <p class="connect">& let's connect !</p>
+        <div class="icons-container">
+            <a href="https://www.facebook.com/brahim.iddouch.3" target="_blank">
+                <img class="icons" src="./assets/icons/fb.png" alt="facebook ibrahim">
+            </a>
+            <a href="https://www.instagram.com/brahimiddouch/" target="_blank">
+                <img class="icons" src="./assets/icons/insta.png" alt="instagram ibrahim">
+            </a>
+            <a href="https://www.youtube.com/embed/mp6vlmDUQwA" target="_blank">
+                <img class="icons" src="./assets/icons/yt.png" alt="youtube ibrahim">
+            </a>
+        </div>
+    </footer>
+
 </body>
 <!-- Utiliser background-image, background-size, background-position pour logo début de page
      Utiliser background-position pour la photo de Brahim qui fait un backflip
