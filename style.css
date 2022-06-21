@@ -47,10 +47,14 @@ section {
 }
 
 .header {
+  z-index: 10;
   display: flex;
   height: 10vh;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
+  background-color: #f5d410;
+  position: fixed;
 }
 
 .dropdown {
@@ -83,7 +87,7 @@ section {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropbtn:hover {
-  text-decoration: underline #f5d410 3px;
+  text-decoration: underline #fff 3px;
 }
 
 .language-container {
