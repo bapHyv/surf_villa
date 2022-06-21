@@ -345,6 +345,10 @@ section {
   width: 100%;
 }
 
+.img3-section-surf-camp {
+  width: 100%;
+}
+
 .nb-section-surf-camp {
   position: absolute;
   font-family: 'Collier-regular';
@@ -358,4 +362,239 @@ section {
 
 .bold {
   font-weight: bold;
+}
+
+.nb2 {
+  position: absolute;
+  font-family: 'Collier-regular';
+  color: white;
+  font-size: 50rem;
+  left: -150px;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+
+.nb3 {
+  position: absolute;
+  font-family: 'Collier-regular';
+  color: white;
+  font-size: 50rem;
+  left: -150px;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+
+.title-section-adventures {
+  font-family: 'Collier-regular';
+  font-size: 3.5rem;
+  font-weight: 200;
+  padding-left: 80px;
+}
+
+.paradise-and-text-section-adventures-container {
+  display: flex;
+}
+
+.paradise-section-adventures {
+  width: 60%;
+  font-family: 'Collier-regular';
+  background-color: #f5d410;
+  font-size: 15rem;
+  color: white;
+  padding-left: 80px;
+  padding-bottom: 80px;
+  line-height: 100%;
+}
+
+.awesome-section-adventures {
+  width: 40%;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 70px;
+}
+
+.img1-section-adventures-container {
+  position: relative;
+}
+
+.img1-section-adventures {
+  position: absolute;
+  height: 500px;
+  top: -200px;
+  left: 50%;
+}
+
+.section-formulaire {
+  margin-top: 400px;
+}
+
+.title-section-formulaire {
+  font-family: 'Collier-regular';
+  font-size: 3.5rem;
+  font-weight: 200;
+  width: 80%;
+  margin: 0px auto 20px auto;
+}
+
+.accommodation {
+  height: 400px;
+  width: 80%;
+  border: 3px solid #f5d410;
+  margin: auto;
+}
+
+.book-area {
+  height: 100%;
+}
+
+.container-form {
+  width: auto;
+  height: 100%;
+  display: block;
+  background: #fff;
+}
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  width: 80%;
+  margin: 0% 10%;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #f5d410;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: rgb(75, 75, 75);
+  font-size: 1.5em;
+  font-weight: normal;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #f5d410;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 83%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: black;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.button {
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+  width: 120px;
+  height: 52px;
+  background-color: #f5d410;
+  border: transparent;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
