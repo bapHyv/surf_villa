@@ -685,7 +685,84 @@ footer {
   width: 50px;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (min-width: 1401px) and (max-width: 1780px) {
+  /* .header {
+    display: none;
+  } */
+  .section-hello {
+    height: auto;
+  }
+
+  .img-section-hello-container {
+    position: static;
+  }
+
+  .img-section-hello {
+    position: static;
+  }
+
+  .section-about-us {
+    position: static;
+  }
+
+  .text-ml50 {
+    margin-left: 0px;
+    padding-top: 50px;
+  }
+
+  .wonderful-big-text-section-about-us {
+    padding: 0px 40px;
+    font-size: 15rem;
+    text-align: center;
+  }
+
+  .img2-section-about-us-container {
+    position: static;
+  }
+
+  .img2-section-about-us {
+    position: static;
+    margin: 0px 25%;
+  }
+
+  .section-about-villa {
+    margin: 0;
+  }
+
+  .welcome-text-section-about-villa {
+    font-size: 11rem;
+    line-height: 105%;
+  }
+
+  .nb-section-surf-camp,
+  .nb2,
+  .nb3 {
+    position: static;
+    font-size: 35rem;
+    text-align: center;
+  }
+
+  .paradise-section-adventures {
+    padding: 40px;
+    font-size: 10rem;
+    width: 50%;
+  }
+
+  .paradise-and-text-section-adventures-container {
+    margin-top: 40px;
+  }
+
+  .img1-section-adventures-container {
+    position: static;
+  }
+
+  .img1-section-adventures {
+    position: static;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
   section {
     margin-bottom: 50px;
   }
@@ -705,11 +782,6 @@ footer {
   .logo-container {
     height: 40vh;
     margin-top: 10vh;
-  }
-
-  .logo {
-    width: 65%;
-    height: auto;
   }
 
   .section-hello {
@@ -733,7 +805,7 @@ footer {
 
   .img-section-hello {
     position: static;
-    width: 100%;
+    width: 50%;
   }
 
   .section-about-us {
