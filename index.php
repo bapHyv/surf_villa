@@ -257,8 +257,12 @@
                 <div class="container-form">
                     <form action="http://localhost:8888/sv_one_page/message/action_form.php" method="POST">
                         <div class="group">
-                            <label for="nom" class="form-label">Your Name</label>
-                            <input type="text" name="nom" class="form-control test" id="nom" required>
+                            <label for="firstname" class="form-label">Firstname</label>
+                            <input type="text" name="firstname" class="form-control test" id="firstname" required>
+                        </div>
+                        <div class="group">
+                            <label for="lastname" class="form-label">Lastname</label>
+                            <input type="text" name="lastname" class="form-control test" id="lastname" required>
                         </div>
                         <div class="group">
                             <label for="mail" class="form-label" id="long-text-form">How should we contact you ? (your
@@ -269,7 +273,7 @@
                             <input type="mail" name="mail" class="form-control" id="mail" required>
                         </div>
                         <div class="group">
-                            <label for="message" class="form-label">Your question</label>
+                            <label for="message" class="form-label">Your question/message</label>
                             <input type="message" name="message" class="form-control" id="messsage" required>
                         </div>
                         <div class="group">
