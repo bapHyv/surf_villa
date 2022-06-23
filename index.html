@@ -28,16 +28,26 @@
             </div>
         </div>
         <a href="#adventures" class="dropbtn">ADVENTURES</p>
-        <a href="#formulaire" class="dropbtn">ACCOMODATION</a>
-        <a href="#contact" class="dropbtn">CONTACTS</a>
-        <div class="language-container">
-            <a href="">FR</a>
-            <p>|</p>
-            <a href="">EN</a>
-            <p>|</p>
-            <a href="">ES</a>
-        </div>
+            <a href="#formulaire" class="dropbtn">ACCOMODATION</a>
+            <a href="#contact" class="dropbtn">CONTACTS</a>
+            <div class="language-container" id="languages-desktop">
+                <a href="">FR</a>
+                <p>|</p>
+                <a href="">EN</a>
+                <p>|</p>
+                <a href="">ES</a>
+            </div>
+            <div class="dropdown" id="languages-phone">
+                <p class="dropbtn">LANGUAGES</p>
+                <div class="dropdown-content">
+                    <a href="#">FR</a>
+                    <a href="#">EN</a>
+                    <a href="#">ES</a>
+                </div>
+            </div>
+
     </header>
+
     <div class="logo-container">
         <img class="logo" src="./assets/photos/logo_copie.png" alt="logo surf villa">
     </div>
@@ -251,12 +261,15 @@
                             <input type="text" name="nom" class="form-control test" id="nom" required>
                         </div>
                         <div class="group">
-                            <label for="mail" class="form-label">How should we contact you ? (your phone, insta, e-mail,
+                            <label for="mail" class="form-label" id="long-text-form">How should we contact you ? (your
+                                phone, insta, e-mail,
                                 whatsApp...)</label>
+                            <label for="mail" class="form-label" id="short-text-form">How should we contact you
+                                ?</label>
                             <input type="mail" name="mail" class="form-control" id="mail" required>
                         </div>
                         <div class="group">
-                            <label for="message" class="form-label">Your questions</label>
+                            <label for="message" class="form-label">Your question</label>
                             <input type="message" name="message" class="form-control" id="messsage" required>
                         </div>
                         <div class="group">
@@ -288,10 +301,6 @@
             </a>
         </div>
     </footer>
-<script src="./main.js"></script>
 </body>
-<!-- Utiliser background-image, background-size, background-position pour logo début de page
-     Utiliser background-position pour la photo de Brahim qui fait un backflip
--->
 
 </html>

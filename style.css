@@ -53,8 +53,9 @@ section {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: #f5d410;
+  background-image: linear-gradient(to right bottom, #f5d410, #fff);
   position: fixed;
+  top: 0;
 }
 
 .dropdown {
@@ -82,12 +83,20 @@ section {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .dropbtn:hover {
   text-decoration: underline #fff 3px;
+}
+
+#languages-phone {
+  display: none;
 }
 
 .language-container {
@@ -500,6 +509,10 @@ section {
   margin: 0% 10%;
 }
 
+.short-text-form {
+  display: none;
+}
+
 form {
   height: 100%;
   display: flex;
@@ -670,4 +683,287 @@ footer {
 
 .icons {
   width: 50px;
+}
+
+@media screen and (max-width: 730px) {
+  section {
+    margin-bottom: 50px;
+  }
+
+  .header {
+    font-size: 10px;
+  }
+
+  #languages-desktop {
+    display: none;
+  }
+
+  #languages-phone {
+    display: block;
+  }
+
+  .logo-container {
+    height: 40vh;
+    margin-top: 10vh;
+  }
+
+  .logo {
+    width: 65%;
+    height: auto;
+  }
+
+  .section-hello {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .infos-section-hello {
+    padding: 0;
+    width: 100%;
+  }
+
+  .title-section-hello {
+    font-size: 5rem;
+  }
+
+  .img-section-hello-container {
+    width: 100%;
+  }
+
+  .img-section-hello {
+    position: static;
+    width: 100%;
+  }
+
+  .section-about-us {
+    position: static;
+  }
+
+  .img1-section-about-us {
+    display: none;
+  }
+
+  .text-section-about-us-container {
+    margin: 0px;
+    padding: 0px 40px;
+  }
+
+  .text-ml50 {
+    margin-left: 0px;
+  }
+
+  .title-section-about-us {
+    text-align: center;
+  }
+
+  .big-text-section-about-us {
+    height: auto;
+  }
+
+  .with-big-text-section-about-us {
+    font-size: 7rem;
+    padding-top: 30px;
+  }
+
+  .wonderful-big-text-section-about-us {
+    padding-left: 0px;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .img2-section-about-us-container {
+    position: static;
+  }
+
+  .img2-section-about-us {
+    position: static;
+    width: 100%;
+  }
+
+  .section-about-villa {
+    margin: 0px;
+  }
+
+  .text-img-container-about-villa {
+    flex-direction: column;
+  }
+
+  .text-section-about-villa-container {
+    width: 100%;
+    padding: 0px 40px;
+    margin-bottom: 40px;
+  }
+
+  .text1-section-about-villa,
+  .text2-section-about-villa {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .img-and-text-section-about-villa-container {
+    width: 100%;
+    padding: 0px 40px;
+  }
+
+  .img1-section-about-villa {
+    position: static;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .welcome-text-section-about-villa {
+    margin: 30px 0px;
+    text-align: center;
+    padding: 0px;
+    font-size: 5rem;
+  }
+
+  .img2-section-about-villa {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+  }
+
+  .section-location {
+    margin-top: 0px;
+  }
+
+  .img-section-location {
+    display: none;
+  }
+
+  .text-section-location-container {
+    width: 100%;
+  }
+
+  .fp-section-location {
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sp-section-location {
+    height: auto;
+    text-align: center;
+  }
+
+  .section-surf-camp {
+    flex-direction: column;
+  }
+
+  .text-and-img1-section-surf-camp-container {
+    width: 100%;
+  }
+
+  .text-section-surf-camp-container {
+    padding: 0px 40px;
+  }
+
+  .title-section-surf-camp {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .img2-and-nb-section-surf-camp-container {
+    position: static;
+    width: 100%;
+    background-color: white;
+    margin-top: 40px;
+  }
+
+  .nb-section-surf-camp,
+  .nb2,
+  .nb3 {
+    display: none;
+  }
+
+  .title-section-adventures {
+    font-size: 2.5rem;
+    padding: 0px 40px;
+    text-align: center;
+  }
+
+  .paradise-and-text-section-adventures-container {
+    flex-direction: column;
+  }
+
+  .paradise-section-adventures {
+    width: 100%;
+    font-size: 5rem;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .awesome-section-adventures {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .img1-section-adventures-container {
+    position: static;
+  }
+
+  .img1-section-adventures {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .section-formulaire {
+    margin-top: 0px;
+  }
+
+  .title-section-formulaire {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .accommodation {
+    width: 90%;
+  }
+
+  .group {
+    text-align: center;
+  }
+
+  .form-label {
+    font-size: 1.2rem;
+  }
+
+  #long-text-form {
+    display: none;
+  }
+
+  #short-text-form {
+    display: block;
+  }
+
+  .text-section-message {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .see-you {
+    padding: 5px 40px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .connect {
+    padding: 5px 40px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .icons-container {
+    margin: 0;
+    padding: 20px 0px;
+  }
 }
