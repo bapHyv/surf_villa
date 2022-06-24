@@ -89,13 +89,13 @@ $messages = $request->fetchAll(PDO::FETCH_ASSOC);
                     <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">ID</th>
                                     <th scope="col">Firstname</th>
                                     <th scope="col">Lastname</th>
                                     <th scope="col">Contact</th>
                                     <th scope="col">Message</th>
                                     <th scope="col">Date</th>
                                     <th scope="col">Status</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -103,7 +103,6 @@ $messages = $request->fetchAll(PDO::FETCH_ASSOC);
                                 <?php foreach ($messages as $msg): ?>
                                     <tr>
                                         <!-- AFFICHAGE DES CHAMPS -->
-                                        <th scope="row"><?= $msg['id'] ?></th>
                                         <th><?= $msg['firstname'] ?></th>
                                         <th><?= $msg['lastname'] ?></th>
                                         <th><?= $msg['contact'] ?></th>
@@ -115,7 +114,9 @@ $messages = $request->fetchAll(PDO::FETCH_ASSOC);
                                             } else {
                                                 echo "lu";
                                             }
-                                         
+                                         ?></th>
+                                         <th><?php
+                                            echo '<a class="btn btn-danger" href="delete_msg.php?id='. $msg['id'] .'">delete</a>'
                                          ?></th>
                                     </tr>
                                 <?php endforeach; ?>
