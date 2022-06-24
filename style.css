@@ -118,6 +118,30 @@ section {
   height: 294px;
 }
 
+.success-message,
+.error-message {
+  border-radius: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-message {
+  border: 3px solid #4bb543;
+  background-color: #85fa7d;
+}
+
+.error-message {
+  border: 3px solid #ff0033;
+  background-color: #ff6e8b;
+}
+
+.msg {
+  font-size: 1.5rem;
+  color: black;
+}
+
 .section-hello {
   position: relative;
   height: 80vh;

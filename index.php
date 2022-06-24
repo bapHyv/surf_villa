@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,6 +54,25 @@
         <img class="logo" src="./assets/photos/logo_copie.png" alt="logo surf villa">
     </div>
 
+    <?php if (
+        isset($_SESSION['error_msg_form']) &&
+        !$_SESSION['error_msg_form']
+    ): ?>
+    <div class="success-message">
+        <p class="msg">Your message has been sent successfully</p>
+    </div>
+    <?php unset($_SESSION['error_msg_form']); ?>
+    <?php endif; ?>
+    <?php if (
+        isset($_SESSION['error_msg_form']) &&
+        $_SESSION['error_msg_form']
+    ): ?>
+    <div class="error-message">
+        <p class="msg">Error, please try again later</p>
+    </div>
+    <?php unset($_SESSION['error_msg_form']); ?>
+    <?php endif; ?>
+
     <section class="section-hello">
         <div class="infos-section-hello">
             <h2 class="title-section-hello">Hello</h2>
@@ -67,6 +88,8 @@
             <img class="img-section-hello" src="./assets/photos/img_section_hello.JPG" alt="deux femmes sur un rocher">
         </div>
     </section>
+
+    <?php var_dump($_SESSION); ?>
 
     <section class="section-about-us" id="section-about-us">
         <img class="img1-section-about-us" src="./assets/photos/img1_section_about_us.jpg" alt="Piscine du surf camp">
@@ -255,7 +278,7 @@
         <div class="accommodation">
             <div class="book-area">
                 <div class="container-form">
-                    <form action="http://localhost:8888/sv_one_page/message/action_form.php" method="POST">
+                    <form action="action_form.php" method="POST">
                         <div class="group">
                             <label for="firstname" class="form-label">Firstname</label>
                             <input type="text" name="firstname" class="form-control test" id="firstname" required>

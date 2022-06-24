@@ -2,7 +2,11 @@
 session_start();
 
 include './config/config.php';
+include './config/bdd.php';
 
+$sql = 'SELECT * FROM message';
+$request = $bdd->query($sql);
+$messages = $request->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 
@@ -79,7 +83,44 @@ include './config/config.php';
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="./logout_action.php" class="btn btn-danger">Se déconnecter</a>
                     </div>
+
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Firstname</th>
+                                    <th scope="col">Lastname</th>
+                                    <th scope="col">Contact</th>
+                                    <th scope="col">Message</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- BOUCLE SUR LE TABLEAU D'OCCURENCE -->
+                                <?php foreach ($messages as $msg): ?>
+                                    <tr>
+                                        <!-- AFFICHAGE DES CHAMPS -->
+                                        <th scope="row"><?= $msg['id'] ?></th>
+                                        <th><?= $msg['firstname'] ?></th>
+                                        <th><?= $msg['lastname'] ?></th>
+                                        <th><?= $msg['contact'] ?></th>
+                                        <th><?= $msg['message'] ?></th>
+                                        <th><?= $msg['date'] ?></th>
+                                        <th><?php 
+                                            if ($msg['status'] == 1) {
+                                                echo ' <p>Non lu</p>  <a class="btn btn-success" href="mark_as_read.php?id=' . $msg['id'] . '">Marquer comme lu</a>';
+                                            } else {
+                                                echo "lu";
+                                            }
+                                         
+                                         ?></th>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
 
                 </div>
                 <!-- /.container-fluid -->
