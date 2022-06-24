@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style_en.css">
+    <link rel="stylesheet" href="./style_fr.css">
     <title>Surf Villa</title>
 </head>
 
@@ -58,20 +58,20 @@
     <?php if (
         isset($_SESSION['error_msg_form']) &&
         !$_SESSION['error_msg_form']
-    ): ?>
-    <div class="success-message">
-        <p class="msg">Your message has been sent successfully</p>
-    </div>
-    <?php unset($_SESSION['error_msg_form']); ?>
+    ) : ?>
+        <div class="success-message">
+            <p class="msg">Your message has been sent successfully</p>
+        </div>
+        <?php unset($_SESSION['error_msg_form']); ?>
     <?php endif; ?>
     <?php if (
         isset($_SESSION['error_msg_form']) &&
         $_SESSION['error_msg_form']
-    ): ?>
-    <div class="error-message">
-        <p class="msg">Error, please try again later</p>
-    </div>
-    <?php unset($_SESSION['error_msg_form']); ?>
+    ) : ?>
+        <div class="error-message">
+            <p class="msg">Error, please try again later</p>
+        </div>
+        <?php unset($_SESSION['error_msg_form']); ?>
     <?php endif; ?>
 
     <section class="section-hello">
@@ -97,6 +97,8 @@
         </div>
     </section>
 
+    <?php var_dump($_SESSION); ?>
+
     <section class="section-about-us" id="section-about-us">
         <img class="img1-section-about-us" src="./assets/photos/img1_section_about_us.jpg" alt="Piscine du surf camp">
         <div class="text-section-about-us-container">
@@ -117,8 +119,7 @@
             <p class="wonderful-big-text-section-about-us">Wonderful <br> horizon <br> view</p>
         </div>
         <div class="img2-section-about-us-container">
-            <img class="img2-section-about-us" src="./assets/photos/img2_section_about_us.JPG"
-                alt="Groupe de personnes en vacance">
+            <img class="img2-section-about-us" src="./assets/photos/img2_section_about_us.JPG" alt="Groupe de personnes en vacance">
         </div>
     </section>
 
@@ -132,14 +133,12 @@
                     waves with surfers from all over the world.</p>
             </div>
             <div class="img-and-text-section-about-villa-container">
-                <img class="img1-section-about-villa" src="./assets/photos/img1_section_about_villa.jpg"
-                    alt="Brahim Iddouch">
+                <img class="img1-section-about-villa" src="./assets/photos/img1_section_about_villa.jpg" alt="Brahim Iddouch">
                 <p class="welcome-text-section-about-villa">You are welcome in my house</p>
             </div>
         </div>
         <div class="img2-section-about-villa-container">
-            <img class="img2-section-about-villa" src="./assets/photos/img2_section_about_villa.jpg"
-                alt="Brahim Iddouch faisant un backflip">
+            <img class="img2-section-about-villa" src="./assets/photos/img2_section_about_villa.jpg" alt="Brahim Iddouch faisant un backflip">
         </div>
     </section>
 
@@ -184,12 +183,10 @@
                     let's watch how this adventure looks like
                 </p>
             </div>
-            <img class="img1-section-surf-camp" src="./assets/photos/img1_section_surf_camp.jpg"
-                alt="photo de la cuisine de surf camp">
+            <img class="img1-section-surf-camp" src="./assets/photos/img1_section_surf_camp.jpg" alt="photo de la cuisine de surf camp">
         </div>
         <div class="img2-and-nb-section-surf-camp-container">
-            <img class="img2-section-surf-camp" src="./assets/photos/img2_section_surf_camp.jpg"
-                alt="Chambre de la location de surf camp">
+            <img class="img2-section-surf-camp" src="./assets/photos/img2_section_surf_camp.jpg" alt="Chambre de la location de surf camp">
             <p class="nb-section-surf-camp">#1</p>
         </div>
     </section>
@@ -227,12 +224,10 @@
                     Trip to Essaouira - ???
                 </p>
             </div>
-            <img class="img3-section-surf-camp" src="./assets/photos/img3_section_surf_camp.jpg"
-                alt="photo de la cuisine de surf camp">
+            <img class="img3-section-surf-camp" src="./assets/photos/img3_section_surf_camp.jpg" alt="photo de la cuisine de surf camp">
         </div>
         <div class="img2-and-nb-section-surf-camp-container">
-            <img class="img2-section-surf-camp" src="./assets/photos/img4_section_surf_camp.jpg"
-                alt="Chambre de la location de surf camp">
+            <img class="img2-section-surf-camp" src="./assets/photos/img4_section_surf_camp.jpg" alt="Chambre de la location de surf camp">
             <p class="nb2">#2</p>
         </div>
     </section>
@@ -256,12 +251,10 @@
                     analysis of your progress <br>
                 </p>
             </div>
-            <img class="img1-section-surf-camp" src="./assets/photos/img5_section_surf_camp.jpg"
-                alt="photo de la cuisine de surf camp">
+            <img class="img1-section-surf-camp" src="./assets/photos/img5_section_surf_camp.jpg" alt="photo de la cuisine de surf camp">
         </div>
         <div class="img2-and-nb-section-surf-camp-container">
-            <img class="img2-section-surf-camp" src="./assets/photos/img6_section_surf_camp.jpg"
-                alt="Chambre de la location de surf camp">
+            <img class="img2-section-surf-camp" src="./assets/photos/img6_section_surf_camp.jpg" alt="Chambre de la location de surf camp">
             <p class="nb3">#3</p>
         </div>
     </section>
@@ -274,8 +267,7 @@
                 jump into small lagoons, have a walk along canyone or just chill and enjoy the view.</p>
         </div>
         <div class="img1-section-adventures-container">
-            <img src="./assets/photos/img1_section_adventures.JPG" alt="canyone paradise valley"
-                class="img1-section-adventures">
+            <img src="./assets/photos/img1_section_adventures.JPG" alt="canyone paradise valley" class="img1-section-adventures">
         </div>
     </section>
 

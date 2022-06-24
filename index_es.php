@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style_en.css">
+    <link rel="stylesheet" href="./style_es.css">
     <title>Surf Villa</title>
 </head>
 
@@ -34,7 +34,7 @@
             <a href="#formulaire" class="dropbtn">ACCOMODATION</a>
             <a href="#contact" class="dropbtn">CONTACTS</a>
             <div class="language-container" id="languages-desktop">
-                <a class="lg-en" href="index.php">EN</a>
+            <a class="lg-en" href="index.php">EN</a>
                 <p>|</p>
                 <a class="lg-fr" href="index_fr.php">FR</a>
                 <p>|</p>
@@ -77,25 +77,20 @@
     <section class="section-hello">
         <div class="infos-section-hello">
             <h2 class="title-section-hello">Hello</h2>
-            <p class="text-section-hello">
-                Are you looking to plan the perfect surf vacation? Surf Villa might be what your are looking for! 
-                Stay with us and we will provide you the best surf experience, daily adventures, awesome accommodation, 
-                delicious food from our chef and much more. Our team will help you to catch your first wave if you are a 
-                beginner or guide you to the best spots in Morocco if you are already a word champion.
-                Here at Surf Villa your happiness is our main priority and we aim is to make your surf trip in Morocco 
-                an unforgettable experience. Morocco is our home and we are happy to introduce you to its rich culture. 
-                By staying with locals you will have the benefit of being part of the best and most authentic experiences. 
-                We host groups and individual travelers in our large yet cozy villa, providing surf lessons and surf guiding for all levels, 
-                organising daily activities and trips around the Agadir area. You can join our scheduled surf camps or just come with your 
-                friends anytime and we will make a tailored plan specially for you.
-                Feel free to contact us and we hope to see you soon!
-            </p>
+            <p class="text-section-hello">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi amet sit
+                placeat repudiandae nemo beatae
+                maxime numquam. Quod illo, molestias inventore veritatis quisquam ut iusto quidem. Impedit ab officiis
+                labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non facere impedit animi nostrum illo
+                sunt asperiores, incidunt minima deleniti maxime neque eveniet harum quibusdam in nisi veniam voluptatem
+                accusamus amet.</p>
             <p class="signature-section-hello">brahim iddouch</p>
         </div>
         <div class="img-section-hello-container">
             <img class="img-section-hello" src="./assets/photos/img_section_hello.JPG" alt="deux femmes sur un rocher">
         </div>
     </section>
+
+    <?php var_dump($_SESSION); ?>
 
     <section class="section-about-us" id="section-about-us">
         <img class="img1-section-about-us" src="./assets/photos/img1_section_about_us.jpg" alt="Piscine du surf camp">

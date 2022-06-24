@@ -144,7 +144,7 @@ section {
 
 .section-hello {
   position: relative;
-  height: 80vh;
+  height: auto;
   background-color: #f5d410;
   display: flex;
   padding: 80px;
