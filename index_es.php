@@ -76,7 +76,7 @@
 
     <section class="section-hello">
         <div class="infos-section-hello">
-            <h2 class="title-section-hello">Hello</h2>
+            <h2 class="title-section-hello">Hola</h2>
             <p class="text-section-hello">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi amet sit
                 placeat repudiandae nemo beatae
                 maxime numquam. Quod illo, molestias inventore veritatis quisquam ut iusto quidem. Impedit ab officiis
@@ -89,8 +89,6 @@
             <img class="img-section-hello" src="./assets/photos/img_section_hello.JPG" alt="deux femmes sur un rocher">
         </div>
     </section>
-
-    <?php var_dump($_SESSION); ?>
 
     <section class="section-about-us" id="section-about-us">
         <img class="img1-section-about-us" src="./assets/photos/img1_section_about_us.jpg" alt="Piscine du surf camp">

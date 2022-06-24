@@ -832,6 +832,10 @@ footer {
     width: 50%;
   }
 
+  .text-section-hello {
+    font-size: 1.2rem;
+  }
+
   .section-about-us {
     position: static;
   }

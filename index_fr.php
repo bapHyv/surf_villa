@@ -76,7 +76,7 @@
 
     <section class="section-hello">
         <div class="infos-section-hello">
-            <h2 class="title-section-hello">Hello</h2>
+            <h2 class="title-section-hello">Bonjour</h2>
             <p class="text-section-hello">
                 Are you looking to plan the perfect surf vacation? Surf Villa might be what your are looking for! 
                 Stay with us and we will provide you the best surf experience, daily adventures, awesome accommodation, 
@@ -96,8 +96,6 @@
             <img class="img-section-hello" src="./assets/photos/img_section_hello.JPG" alt="deux femmes sur un rocher">
         </div>
     </section>
-
-    <?php var_dump($_SESSION); ?>
 
     <section class="section-about-us" id="section-about-us">
         <img class="img1-section-about-us" src="./assets/photos/img1_section_about_us.jpg" alt="Piscine du surf camp">
