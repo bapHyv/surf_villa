@@ -46,6 +46,20 @@ section {
   margin-bottom: 200px;
 }
 
+#arrow-up {
+  position: fixed;
+  z-index: 10000;
+  top: 89%;
+  left: 3%;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  background-image: linear-gradient(to right bottom, #f5d410, #fff, #fff);
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .header {
   z-index: 10;
   display: flex;
@@ -803,10 +817,16 @@ footer {
     padding: 10px;
     position: fixed;
     z-index: 100;
-    height: 70px;
-    width: 70px;
-    left: 73%;
+    height: 60px;
+    width: 60px;
+    left: 78%;
     top: 89%;
+  }
+
+  #arrow-up {
+    left: 58%;
+    height: 60px;
+    width: 60px;
   }
 
   .header {

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <img id="arrow-up" src="./assets/icons/arrow-up.png" alt="">
     <img id="img-burger-menu" src="./assets/icons/burger.png" alt="burger menu">
     <header class="header" id="navbar">
         <div class="dropdown">

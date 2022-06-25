@@ -4,6 +4,7 @@ let dropdowns = d.querySelectorAll('.dropdown')
 let dropdownsContent = d.querySelectorAll('.dropdown-content')
 let bgmenu = d.querySelector('#img-burger-menu')
 let navbar = d.querySelector('#navbar')
+let arrowUp = d.querySelector("#arrow-up")
 
 console.dir(bgmenu)
 
@@ -44,4 +45,14 @@ bgmenu.addEventListener('click', function (event) {
   } else {
     navbar.classList.remove('show-header')
   }
+})
+
+
+arrowUp.addEventListener('click', function(event) {
+  // window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
 })
