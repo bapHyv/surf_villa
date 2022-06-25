@@ -58,6 +58,10 @@ section {
   top: 0;
 }
 
+#img-burger-menu {
+  display: none;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -87,7 +91,7 @@ section {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.show {
   display: block;
 }
 
@@ -791,8 +795,53 @@ footer {
     margin-bottom: 50px;
   }
 
+  #img-burger-menu {
+    display: block;
+    background-image: linear-gradient(to right bottom, #f5d410, white, white);
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    width: 70px;
+    left: 73%;
+    top: 89%;
+  }
+
   .header {
-    font-size: 10px;
+    height: 100vh;
+    width: 50vw;
+    flex-direction: column;
+    left: -50vw;
+    animation-duration: 0.5s;
+    animation-name: slideHeaderOut;
+  }
+
+  .show-header {
+    left: 0vw;
+    animation-duration: 0.5s;
+    animation-name: slideHeaderIn;
+  }
+
+  @keyframes slideHeaderIn {
+    from {
+      left: -50vw;
+    }
+
+    to {
+      left: 0vw;
+    }
+  }
+
+  @keyframes slideHeaderOut {
+    from {
+      left: 0vw;
+    }
+
+    to {
+      left: -50vw;
+    }
   }
 
   #languages-desktop {
@@ -805,7 +854,6 @@ footer {
 
   .logo-container {
     height: 40vh;
-    margin-top: 10vh;
   }
 
   .section-hello {

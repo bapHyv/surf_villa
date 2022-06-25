@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <img id="img-burger-menu" src="./assets/icons/burger.png" alt="burger menu">
     <header class="header" id="navbar">
         <div class="dropdown">
             <p class="dropbtn">A VILLA</p>
@@ -30,9 +31,9 @@
                 <a href="#surf-guiding">SURF GUIDING</a>
             </div>
         </div>
-        <a href="#adventures" class="dropbtn">ADVENTURES</p>
-            <a href="#formulaire" class="dropbtn">ACCOMODATION</a>
-            <a href="#contact" class="dropbtn">CONTACTS</a>
+        <a href="#adventures">ADVENTURES</p>
+            <a href="#formulaire">ACCOMODATION</a>
+            <a href="#contact">CONTACTS</a>
             <div class="language-container" id="languages-desktop">
                 <a class="lg-en" href="index.php">EN</a>
                 <p>|</p>
@@ -48,7 +49,6 @@
                     <a class="lg-es" href="index_es.php">ES</a>
                 </div>
             </div>
-
     </header>
 
     <div class="logo-container">
@@ -58,35 +58,35 @@
     <?php if (
         isset($_SESSION['error_msg_form']) &&
         !$_SESSION['error_msg_form']
-    ): ?>
-    <div class="success-message">
-        <p class="msg">Your message has been sent successfully</p>
-    </div>
-    <?php unset($_SESSION['error_msg_form']); ?>
+    ) : ?>
+        <div class="success-message">
+            <p class="msg">Your message has been sent successfully</p>
+        </div>
+        <?php unset($_SESSION['error_msg_form']); ?>
     <?php endif; ?>
     <?php if (
         isset($_SESSION['error_msg_form']) &&
         $_SESSION['error_msg_form']
-    ): ?>
-    <div class="error-message">
-        <p class="msg">Error, please try again later</p>
-    </div>
-    <?php unset($_SESSION['error_msg_form']); ?>
+    ) : ?>
+        <div class="error-message">
+            <p class="msg">Error, please try again later</p>
+        </div>
+        <?php unset($_SESSION['error_msg_form']); ?>
     <?php endif; ?>
 
     <section class="section-hello">
         <div class="infos-section-hello">
             <h2 class="title-section-hello">Hello</h2>
             <p class="text-section-hello">
-                Are you looking to plan the perfect surf vacation? Surf Villa might be what your are looking for! 
-                Stay with us and we will provide you the best surf experience, daily adventures, awesome accommodation, 
-                delicious food from our chef and much more. Our team will help you to catch your first wave if you are a 
+                Are you looking to plan the perfect surf vacation? Surf Villa might be what your are looking for!
+                Stay with us and we will provide you the best surf experience, daily adventures, awesome accommodation,
+                delicious food from our chef and much more. Our team will help you to catch your first wave if you are a
                 beginner or guide you to the best spots in Morocco if you are already a word champion.
-                Here at Surf Villa your happiness is our main priority and we aim is to make your surf trip in Morocco 
-                an unforgettable experience. Morocco is our home and we are happy to introduce you to its rich culture. 
-                By staying with locals you will have the benefit of being part of the best and most authentic experiences. 
-                We host groups and individual travelers in our large yet cozy villa, providing surf lessons and surf guiding for all levels, 
-                organising daily activities and trips around the Agadir area. You can join our scheduled surf camps or just come with your 
+                Here at Surf Villa your happiness is our main priority and we aim is to make your surf trip in Morocco
+                an unforgettable experience. Morocco is our home and we are happy to introduce you to its rich culture.
+                By staying with locals you will have the benefit of being part of the best and most authentic experiences.
+                We host groups and individual travelers in our large yet cozy villa, providing surf lessons and surf guiding for all levels,
+                organising daily activities and trips around the Agadir area. You can join our scheduled surf camps or just come with your
                 friends anytime and we will make a tailored plan specially for you.
                 Feel free to contact us and we hope to see you soon!
             </p>
@@ -117,8 +117,7 @@
             <p class="wonderful-big-text-section-about-us">Wonderful <br> horizon <br> view</p>
         </div>
         <div class="img2-section-about-us-container">
-            <img class="img2-section-about-us" src="./assets/photos/img2_section_about_us.JPG"
-                alt="Groupe de personnes en vacance">
+            <img class="img2-section-about-us" src="./assets/photos/img2_section_about_us.JPG" alt="Groupe de personnes en vacance">
         </div>
     </section>
 
@@ -132,14 +131,12 @@
                     waves with surfers from all over the world.</p>
             </div>
             <div class="img-and-text-section-about-villa-container">
-                <img class="img1-section-about-villa" src="./assets/photos/img1_section_about_villa.jpg"
-                    alt="Brahim Iddouch">
+                <img class="img1-section-about-villa" src="./assets/photos/img1_section_about_villa.jpg" alt="Brahim Iddouch">
                 <p class="welcome-text-section-about-villa">You are welcome in my house</p>
             </div>
         </div>
         <div class="img2-section-about-villa-container">
-            <img class="img2-section-about-villa" src="./assets/photos/img2_section_about_villa.jpg"
-                alt="Brahim Iddouch faisant un backflip">
+            <img class="img2-section-about-villa" src="./assets/photos/img2_section_about_villa.jpg" alt="Brahim Iddouch faisant un backflip">
         </div>
     </section>
 
@@ -184,12 +181,10 @@
                     let's watch how this adventure looks like
                 </p>
             </div>
-            <img class="img1-section-surf-camp" src="./assets/photos/img1_section_surf_camp.jpg"
-                alt="photo de la cuisine de surf camp">
+            <img class="img1-section-surf-camp" src="./assets/photos/img1_section_surf_camp.jpg" alt="photo de la cuisine de surf camp">
         </div>
         <div class="img2-and-nb-section-surf-camp-container">
-            <img class="img2-section-surf-camp" src="./assets/photos/img2_section_surf_camp.jpg"
-                alt="Chambre de la location de surf camp">
+            <img class="img2-section-surf-camp" src="./assets/photos/img2_section_surf_camp.jpg" alt="Chambre de la location de surf camp">
             <p class="nb-section-surf-camp">#1</p>
         </div>
     </section>
@@ -227,12 +222,10 @@
                     Trip to Essaouira - ???
                 </p>
             </div>
-            <img class="img3-section-surf-camp" src="./assets/photos/img3_section_surf_camp.jpg"
-                alt="photo de la cuisine de surf camp">
+            <img class="img3-section-surf-camp" src="./assets/photos/img3_section_surf_camp.jpg" alt="photo de la cuisine de surf camp">
         </div>
         <div class="img2-and-nb-section-surf-camp-container">
-            <img class="img2-section-surf-camp" src="./assets/photos/img4_section_surf_camp.jpg"
-                alt="Chambre de la location de surf camp">
+            <img class="img2-section-surf-camp" src="./assets/photos/img4_section_surf_camp.jpg" alt="Chambre de la location de surf camp">
             <p class="nb2">#2</p>
         </div>
     </section>
@@ -256,12 +249,10 @@
                     analysis of your progress <br>
                 </p>
             </div>
-            <img class="img1-section-surf-camp" src="./assets/photos/img5_section_surf_camp.jpg"
-                alt="photo de la cuisine de surf camp">
+            <img class="img1-section-surf-camp" src="./assets/photos/img5_section_surf_camp.jpg" alt="photo de la cuisine de surf camp">
         </div>
         <div class="img2-and-nb-section-surf-camp-container">
-            <img class="img2-section-surf-camp" src="./assets/photos/img6_section_surf_camp.jpg"
-                alt="Chambre de la location de surf camp">
+            <img class="img2-section-surf-camp" src="./assets/photos/img6_section_surf_camp.jpg" alt="Chambre de la location de surf camp">
             <p class="nb3">#3</p>
         </div>
     </section>
@@ -274,8 +265,7 @@
                 jump into small lagoons, have a walk along canyone or just chill and enjoy the view.</p>
         </div>
         <div class="img1-section-adventures-container">
-            <img src="./assets/photos/img1_section_adventures.JPG" alt="canyone paradise valley"
-                class="img1-section-adventures">
+            <img src="./assets/photos/img1_section_adventures.JPG" alt="canyone paradise valley" class="img1-section-adventures">
         </div>
     </section>
 
@@ -334,6 +324,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
