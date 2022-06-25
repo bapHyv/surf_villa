@@ -16,17 +16,17 @@
     <img id="arrow-up" src="./assets/icons/arrow-up.png" alt="">
     <img id="img-burger-menu" src="./assets/icons/burger.png" alt="burger menu">
     <header class="header" id="navbar">
-        <div class="dropdown">
+        <div class="dropdown" id="dd1">
             <p class="dropbtn">A VILLA</p>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="ddc1">
                 <a href="#section-about-us">ABOUT US</a>
                 <a href="#section-about-villa">ABOUT VILLA</a>
                 <a href="#section-location">LOCATION</a>
             </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" id="dd2">
             <p class="dropbtn">PACKAGES</p>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="ddc2">
                 <a href="#section-surf-camp">SURF CAMPS</a>
                 <a href="#surf-and-stay">SURF & STAY</a>
                 <a href="#surf-guiding">SURF GUIDING</a>
@@ -42,11 +42,12 @@
                 <p>|</p>
                 <a class="lg-es" href="index_es.php">ES</a>
             </div>
-            <div class="dropdown" id="languages-phone">
-                <p class="dropbtn">LANGUAGES</p>
-                <div class="dropdown-content">
+            <div id="languages-phone">
+                <div id="ddc3">
                     <a class="lg-en" href="index.php">EN</a>
+                    <p>|</p>
                     <a class="lg-fr" href="index_fr.php">FR</a>
+                    <p>|</p>
                     <a class="lg-es" href="index_es.php">ES</a>
                 </div>
             </div>

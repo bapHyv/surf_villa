@@ -5,21 +5,24 @@ let dropdownsContent = d.querySelectorAll('.dropdown-content')
 let bgmenu = d.querySelector('#img-burger-menu')
 let navbar = d.querySelector('#navbar')
 let arrowUp = d.querySelector("#arrow-up")
+let dd1 = d.querySelector("#dd1")
+let dd2 = d.querySelector("#dd2")
+let dd3 = d.querySelector("#languages-phone")
 
-console.dir(bgmenu)
+let ddc1 = d.querySelector("#ddc1")
+let ddc2 = d.querySelector("#ddc2")
+let ddc3 = d.querySelector("#ddc3")
 
-dropdowns.forEach((item) => {
-  item.addEventListener('click', (event) => {
-    event.path.forEach((e) => {
-      if (e.className === 'dropdown') {
-        e.childNodes.forEach((c) => {
-          if (c.className === 'dropdown-content') {
-            c.classList.toggle('show')
-          }
-        })
-      }
-    })
-  })
+dd1.addEventListener('click', function(event) {
+  ddc1.classList.toggle("show")
+})
+
+dd2.addEventListener('click', function(event) {
+  ddc2.classList.toggle("show")
+})
+
+dd3.addEventListener('click', function(event) {
+  ddc3.classList.toggle("show")
 })
 
 window.onclick = function (event) {

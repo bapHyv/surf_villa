@@ -829,6 +829,11 @@ footer {
     width: 60px;
   }
 
+  #ddc3 {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .header {
     height: 100vh;
     width: 50vw;
@@ -870,6 +875,7 @@ footer {
 
   #languages-phone {
     display: block;
+    width: 80%;
   }
 
   .logo-container {
